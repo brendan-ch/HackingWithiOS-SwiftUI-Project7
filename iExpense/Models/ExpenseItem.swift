@@ -12,6 +12,8 @@ struct ExpenseItem: Identifiable, Codable {
     let name: String
     let type: String
     let amount: Double
+    
+    static let types = ["Business", "Personal"]
 }
 
 // Notice this pattern: everything is abstracted into the Expenses class,
